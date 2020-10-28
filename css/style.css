@@ -206,13 +206,16 @@ body section.banner .banner-inner {
   margin: 0 auto;
 }
 
-body section.banner .banner-inner header.banner-submenu {
+body section.banner .banner-inner .banner-submenu {
   max-width: 1170px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0px 15px;
   margin: 0 auto;
   min-height: 135px;
+}
+
+body section.banner .banner-inner .banner-submenu .banner-submenu-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,13 +225,14 @@ body section.banner .banner-inner header.banner-submenu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 20px;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__menu-item {
+body section.banner .banner-inner .banner-submenu .banner-submenu-items .header-submenu__menu-item {
   position: relative;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__menu-item:after {
+body section.banner .banner-inner .banner-submenu .banner-submenu-items .header-submenu__menu-item:after {
   position: absolute;
   left: 0;
   bottom: -20px;
@@ -240,11 +244,11 @@ body section.banner .banner-inner header.banner-submenu .header-submenu__menu-it
   transition: .3s;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__menu-item:hover:after {
+body section.banner .banner-inner .banner-submenu .banner-submenu-items .header-submenu__menu-item:hover:after {
   width: 100%;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__menu-item a {
+body section.banner .banner-inner .banner-submenu .banner-submenu-items .header-submenu__menu-item a {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 19px;
   color: #ffffff;
@@ -254,17 +258,21 @@ body section.banner .banner-inner header.banner-submenu .header-submenu__menu-it
   text-transform: uppercase;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__menu-item a:hover {
+body section.banner .banner-inner .banner-submenu .banner-submenu-items .header-submenu__menu-item a:hover {
   color: #f4a200;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social {
+body section.banner .banner-inner .banner-submenu .header-submenu__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 40px;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item {
   width: 36px;
   height: 36px;
   background-color: #243f73;
@@ -282,15 +290,15 @@ body section.banner .banner-inner header.banner-submenu .header-submenu__social 
   transition: .3s;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item:hover {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item:hover {
   background-color: #f4a200;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item:not(:last-child) {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item:not(:last-child) {
   margin-right: 9px;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item a {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item a {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -298,7 +306,7 @@ body section.banner .banner-inner header.banner-submenu .header-submenu__social 
   border-radius: 50%;
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item a:after {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item a:after {
   position: absolute;
   display: block;
   left: 50%;
@@ -307,27 +315,27 @@ body section.banner .banner-inner header.banner-submenu .header-submenu__social 
           transform: translate(-50%, -50%);
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item.item1 a:after {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item.item1 a:after {
   content: url("../img/header-submenu__social-item1.png");
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item.item2 a:after {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item.item2 a:after {
   content: url("../img/header-submenu__social-item2.png");
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item.item3 a:after {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item.item3 a:after {
   content: url("../img/header-submenu__social-item3.png");
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item.item4 a:after {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item.item4 a:after {
   content: url("../img/header-submenu__social-item4.png");
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item.item5 a:after {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item.item5 a:after {
   content: url("../img/header-submenu__social-item5.png");
 }
 
-body section.banner .banner-inner header.banner-submenu .header-submenu__social .header-submenu__social-item.item6 a:after {
+body section.banner .banner-inner .banner-submenu .header-submenu__social .header-submenu__social-item.item6 a:after {
   content: url("../img/header-submenu__social-item6.png");
 }
 
